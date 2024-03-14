@@ -1,0 +1,63 @@
+.page {
+    width: 23cm;
+    height: 36cm;
+    padding-left: 2.5cm;
+    padding-right: 2.5cm;
+    padding-top:30px;
+    margin: 0.5cm auto;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    background: white;
+    font-size: 19px;
+}
+.Heading {
+    font-family: Cambria;
+
+    text-align: center;
+    font-size: 45px;
+    color: #247c89;
+    margin-bottom: 0px;
+}
+.line{
+    border: 0.55mm solid;
+    color: #3ab6c9;
+    /* margin-bottom: 0px; */
+}
+.Address{
+    text-align: end;
+    padding-top: 0px;
+    /* font-size: 20px; */
+    /* border: 1px solid  black; */
+    margin-top: 10px;
+    color: rgb(54, 54, 54);
+}
+.Objective > h2{
+    color: #247c89;
+    margin-bottom: 0px;
+    font-size: 25px;
+
+}
+.Dynamic{
+    /* border: 1px solid  black; */
+    margin-top: 5px;
+    color: rgb(54, 54, 54);
+    line-height: 25px;
+    font-size: 20px;
+}
+.Sub_Head{
+    /* border: 1px solid  black; */
+    margin-top: 7px;
+    color: rgb(41, 38, 38);
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.list{
+    font-size: 20px;
+    margin-top: 0px;
+    padding-left: 20px;
+    line-height: 30px;
+    
+}
+
