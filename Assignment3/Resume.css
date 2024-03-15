@@ -1,0 +1,64 @@
+.page {
+    width: 23cm;
+    height: 36cm;
+    padding: 30px 2.5cm;
+    margin: 0.3cm auto;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 19px;
+    padding-top:70px;
+}
+.page > div {
+    margin-bottom: 05px;
+    /* border: 1px solid; */
+}
+.page + div > p + p{
+    margin-top: 10px;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+hr {
+    border: 0.50mm solid;
+    color: #3ab6c9;
+}
+.page > div > h2 {
+    color: #087d8f;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+.page > div > ul {
+    font-size: 20px;
+    margin-top: 0;
+    padding-left: 20px;
+    line-height: 30px;
+}
+.page > div ~ div > p ~ p {
+    margin-top: 7px;
+    color: rgb(41, 38, 38);
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+
+}
+.page > div ~ div > p{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    color: rgb(41, 38, 38);
+}
+.page > div > p:first-child {
+    font-family: Cambria;
+    text-align: center;
+    font-size: 45px;
+    color: #2B7B89;
+    margin: 0;
+}
+.page > div > p:last-child {
+    text-align: end;
+    margin-top: 10px;
+    color: rgb(54, 54, 54);
+    
+}
