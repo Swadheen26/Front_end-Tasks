@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout_3</title>
+
+    <style>
+        #page {
+        /* margin: auto; */
+        display: grid;
+        /* border: 2px solid red;    */
+        gap: 40px 20px;
+        justify-content: center;
+        align-content: center;
+        padding: 25px;
+        background-color: rgb(165,135,187);
+        grid-template-areas:
+            "Four Four Six"
+            "One Five Six";
+        grid-template-rows: 230px 230px 150px;
+        grid-template-columns: 230px 230px 230px;
+        }
+
+        #page > div{
+            border: 4px solid black;
+            /* background-color: blueviolet; */
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #page > .One {
+        grid-area: One;
+        background-color: Blue;
+        }
+
+        #page > .Four {
+        grid-area: Four;
+        background-color: #fd1100;
+        }
+
+        #page > .Five {
+        grid-area: Five;
+        background-color: rgb(187, 71, 71);
+        }
+
+        #page > .Six {
+        grid-area: Six;
+        background-color: pink;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid darkgreen; */
+            height: 850px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="page">
+            <div class="One">1</div>
+            <div class="Four">4</div>
+            <div class="Five">5</div>
+            <div class="Six">6</div>
+        </div>
+    </div>
+    
+      
+</body>
+</html>
