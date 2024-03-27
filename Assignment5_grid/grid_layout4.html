@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout_4</title>
+
+    <style>
+        #page {
+        /* margin: auto; */
+        display: grid;
+        /* border: 2px solid red;    */
+        gap: 20px;
+        width: 42%;
+        justify-content: center;
+        align-content: center;
+        padding: 25px;
+        grid-template-areas:
+            "One One Two Two"
+            "Three Four Four Four"
+            "Five Five Five Five";
+        grid-template-rows: repeat(3,120px);
+        grid-template-columns: repeat(4,1fr);
+        }
+
+        #page > div{
+            /* border: 4px solid black; */
+            background-color: rgb(72, 72, 72);
+            border-radius: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            font-size: 45px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 25px;
+        }
+
+        #page > .One {
+        grid-area: One;
+        }
+
+        #page > .Two {
+        grid-area: Two;
+        }
+
+        #page > .Three {
+        grid-area: Three;
+        }
+
+        #page > .Four {
+        grid-area: Four;
+        }
+
+        #page > .Five {
+        grid-area: Five;
+        }
+
+        #page > .Six {
+        grid-area: Six;
+        background-color: pink;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid darkgreen; */
+            height: 850px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="page">
+            <div class="One">A</div>
+            <div class="Two">B</div>
+            <div class="Three">C</div>
+            <div class="Four">D</div>
+            <div class="Five">E</div>
+        </div>
+    </div>
+    
+      
+</body>
+</html>
