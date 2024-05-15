@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popularthings to do</title>
+    <style>
+    .container{
+    width: 1320px;
+    height: 600px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    margin-top: 136px;
+    }
+
+    .top {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    }
+
+    .top > h2 {
+    font-family: Inter;
+    font-size: 29.88px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    max-width: 294.31px;
+    max-height: 45px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+
+    }
+
+    .top > span {
+    font-family: Inter;
+    font-size: 14.3px;
+    font-weight: 400;
+    line-height: 28.13px;
+    width: 44.79px;
+    margin-top: 21.88px;
+    margin-right: 40.8px;
+    margin-left: 0px;
+    padding: 0px;
+    }
+
+    .main {
+    margin: 40px 15px 0px 15px;
+    display: grid;
+    grid-template-areas:
+        "cruise Beach_Tours City_Tours City_Tours"
+        "Museum_Tour Beach_Tours Food Hiking";
+    gap: 30px;
+    /* max-height: 510px; */
+    }
+
+    .main > div {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    }
+
+    .main > div > div {
+    position: absolute;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-family: Inter;
+    font-size: 19.53px;
+    font-weight: 500;
+    line-height: 30px;
+    /* text-align: center; */
+    }
+
+    .main > div > img {
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%); */
+    }
+
+    .cruise {
+    grid-area: cruise;
+    width: 300px;
+    height: 240px;
+    }
+
+    .Beach_Tours {
+    grid-area: Beach_Tours;
+    width: 410px;
+    height: 510px;
+    }
+
+    .Museum_Tour {
+    grid-area: Museum_Tour;
+    width: 300px;
+    height: 240px;
+    }
+
+    .City_Tours {
+    grid-area: City_Tours;
+    width: 520px;
+    height: 240px;
+    }
+
+    .Food {
+    grid-area: Food;
+    width: 190px;
+    height: 240px;
+    }
+
+    .Hiking {
+    grid-area: Hiking;
+    width: 300px;
+    height: 240px;
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="frame2">
+        <div class="container">
+            <div class="top">
+                <h2>Popular things to do</h2>
+                <span>See all</span>
+            </div>
+
+            <div class="main">
+                <div class="cruise">
+                    <img src="Cruise.svg" alt="">
+                    <div class="name">Cruise</div>
+                </div>
+    
+                <div class="Museum_Tour">
+                    <img src="Museum_tour.svg" alt="">
+                    <div class="name">Museum Tour</div>
+                </div>
+    
+                <div class="Beach_Tours">
+                    <img src="Beach.svg" alt="">
+                    <div class="name">Beach Tours</div>
+                </div>
+    
+                <div class="City_Tours">
+                    <img src="City_tour.svg" alt="">
+                    <div class="name">City Tours</div>
+                </div>
+    
+                <div class="Food">
+                    <img src="Food.svg" alt="">
+                    <div class="name">Food</div>
+                </div>
+    
+                <div class="Hiking">
+                    <img src="Hiking.svg" alt="">
+                    <div class="name">Hiking</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
