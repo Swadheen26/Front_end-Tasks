@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 1320px;
+            height: 940.63px;
+            /* border: 1px solid black; */
+            margin: 178px auto;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        header > h2{
+            font-family: Inter;
+            font-size: 29.88px;
+            font-weight: 700;
+            line-height: 45px;
+            text-align: left;
+            max-width: 294.31px;
+            max-height: 45px;
+            gap: 0px;
+            opacity: 0px;
+            margin-top: 5px;
+            margin-left: 15px;
+            margin-bottom: 0px;        }
+
+        header > span{
+            font-family: Inter;
+            font-size: 14.3px;
+            font-weight: 400;
+            line-height: 28.13px;
+            width: 44.79px;
+            margin-top: 21.88px;
+            margin-right: 40.8px;
+            margin-left: 0px;
+            padding: 0px;
+        }
+
+        img{
+            width: 278px;
+            max-height: 198.56px;
+            margin: 11px 11px 0px 11px;
+            border-radius: 12px;
+
+        }
+        main{
+            margin: 45px 15px 0px 15px;
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(4,300px);
+            /* grid-template-rows: repeat(1,388.31px); */
+            gap: 30px;
+        }
+        main > div{
+            width: 300px;
+            height: 388.31px;
+            border: 1px solid #E7E6E6;
+            border-radius: 12px;
+            position: relative;
+            
+        }
+        main > div > div:first-child{
+            max-width: 300px;
+            height: 208.56px;
+            margin-bottom: 10px;
+
+        }
+
+        main > div > span{
+            display:block;
+        }
+
+        main > div > span:nth-of-type(1){
+            font-family: Inter;
+            font-size: 12.29px;
+            font-weight: 400;
+            line-height: 24.38px;
+            text-align: left;
+            /* width: 75.92px; */
+            height: 24.38px;
+            margin-left: 42px;
+            color:  #717171;            
+        }
+
+        main > div > span:nth-of-type(2){
+            font-family: Inter;
+            font-size: 15.88px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            /* width: 249.4px; */
+            height: 45px;
+            margin-left: 21px;
+            color: #05073C;
+            margin-top: 6px;
+            margin-bottom: 10px;
+        }
+        main > div > span:nth-of-type(3){
+            font-family: Inter;
+            font-size: 12.49px;
+            font-weight: 400;
+            line-height: 24.38px;
+            text-align: left;
+            width: 54.59px;
+            height: 17px;
+            margin-left: 101px;
+            color: #05073C;
+        }
+        .flex{
+            /* border: 0.5px solid black; */
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            width: 258px;
+            max-height: 41px;
+            margin: 14.37px 21px 11px 21px;
+            border: 1px 0px 0px 0px;
+            border-top: 1px solid #E7E6E6;
+            color: #05073C;
+
+        }
+        .flex > div:nth-of-type(1){
+            /* border: 0.5px solid black; */
+            max-width: 60.77px;
+            max-height: 24.38px;
+            margin-top: 13.82px;
+            margin-bottom: 2.8px;
+            padding: 3px 0px 4.38px 20.8px;
+
+            /* margin-right: 106.79px; */
+        }
+
+        .flex > div:nth-of-type(2){
+            max-width: 90.44px;
+            max-height: 30px;
+            margin-top: 11px;
+            /* padding: 4px 0px 5px 0px; */
+            display: flex;
+        }
+
+
+        .flex > div:nth-of-type(1) > p{
+            /* border: 0.5px solid black; */
+            max-width: 39.97px;
+            height: 17px;
+            font-family: Inter;
+            font-size: 12.59px;
+            font-weight: 400;
+            text-align: left;
+            Line-height:24.38px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .flex > div:nth-of-type(2) > p:first-child{
+            font-family: Inter;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24.38px;
+            text-align: left;
+            max-width: 34.48px;
+            max-height: 17px;
+            margin-top: 7px;
+            margin-bottom: 6px;
+        }
+
+        .flex > div:nth-of-type(2) > p:nth-of-type(2){
+            /* border: 0.5px solid black; */
+            font-family: Inter;
+            font-size: 14.5px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: left;
+            max-width: 56.36px;
+            height: 21px;
+            margin-top: 4px;
+            margin-bottom: 5px;
+            margin-left:3px;
+            padding: 0px;
+
+        }
+        #Last_child{
+            Height:412.31px;
+        }
+
+        #Last_child > span:nth-of-type(2){
+            margin-top: 5.99px;
+            margin-bottom: 10px;
+            Height:69px;
+            display: block;
+        }
+        button{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            top: 191.56px;
+            left: 244px;
+            padding: 10px 9.8px 10px 10px;
+            border-radius: 35px;
+            border: none;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 40px 0px #0000000D;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 15px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Find Popular Tours</h2>
+            <span>See all</span>
+        </header>
+        <main>
+            <div>
+                <button></button>
+                <div>
+                    <img src="https://s3-alpha-sig.figma.com/img/220a/d79b/8a48694cc2cf188b48e3d1b6ece9e021?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H2VZ8uTYlMXMNB3VIkTxPCUS34gsGDoI9RO7IJDTzKAM8SvcJSQtI7dovLQw-Uo9SziN2JbLZq1mMP96oCu~JSuWiUsbxWjTQDiNte2mBomgX37lltuvJ6LO-d72o7bKak5FImBVYoYJ7D7Tu8CU8A757Jis3smRJpWp59Hf6NXz9LvvyRRqe8tIte5AcWyOLeLHHKs7x82PSJphBkvz-ff2~BXSUd8INY~oL7tWysDzUFfKioeFGxjh3kMKNHe6aVPNG7phVqMkvkO5bC7R~vbfKGxwkIB-XxFqFZSiostpJoMlQXXm440ZfCFLJ0uBH1TCjtXBk7y6LHb8hOzyug__" alt="">
+                </div>
+                <span>Paris, France</span>
+                <span>Centipede Tour - Guided Arizona Desert Tour by ATV</span>
+                <span>4.8 (243)</span>
+
+                <div class="flex">
+                    <div>
+                        <p>4 days</p>
+                    </div>
+                    <div>
+                        <p>From</p>
+                        <p>$189.25</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button></button>
+                <div>
+                    <img src="https://shorturl.at/bhoN5" alt="">
+                </div>
+                <span>New York, USA</span>
+                <span>Molokini and Turtle Town
+                    Snorkeling Adventure Aboard</span>
+                <span>4.8 (243)</span>
+
+                <div class="flex">
+                    <div>
+                        <p>4 days</p>
+                    </div>
+                    <div>
+                        <p>From</p>
+                        <p>$225</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button></button>
+                <div>
+                    <img src="https://shorturl.at/jmET9" alt="">
+                </div>
+                <span>London, UK</span>
+                <span>Westminster Walking Tour &
+                    Westminster Abbey Entry</span>
+                <span>4.8 (243)</span>
+
+                <div class="flex">
+                    <div>
+                        <p>4 days</p>
+                    </div>
+                    <div>
+                        <p>From</p>
+                        <p>$943</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button></button>
+                <div>
+                    <img src="https://shorturl.at/cwyHT" alt="">
+                </div>
+                <span>New York, USA</span>
+                <span>All Inclusive Ultimate Circle Island
+                    Day Tour with Lunch</span>
+                <span>4.8 (243)</span>
+
+                <div class="flex">
+                    <div>
+                        <p>4 days</p>
+                    </div>
+                    <div>
+                        <p>From</p>
+                        <p>$771</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button></button>
+                <div>
+                    <img src="https://shorturl.at/glowS" alt="">
+                </div>
+                <span>Paris, France</span>
+                <span>Space Center Houston Admission
+                    Ticket</span>
+                <span>4.8 (243)</span>
+
+                <div class="flex">
+                    <div>
+                        <p>4 days</p>
+                    </div>
+                    <div>
+                        <p>From</p>
+                        <p>$189.25</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button></button>
+                <div>
+                    <img src="https://tinyurl.com/3fffwtkx" alt="">
+                </div>
+                <span>New York, USA</span>
+                <span>Clear Kayak Tour of Shell Key
+                    Preserve and Tampa Bay Area</span>
+                <span>4.8 (243)</span>
+
+                <div class="flex">
+                    <div>
+                        <p>4 days</p>
+                    </div>
+                    <div>
+                        <p>From</p>
+                        <p>$225</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button></button>
+                <div>
+                    <img src="https://tinyurl.com/yszffkbz" alt="">
+                </div>
+                <span>London, UK</span>
+                <span>History and Hauntings of Salem
+                    Guided Walking Tour</span>
+                <span>4.8 (243)</span>
+
+                <div class="flex">
+                    <div>
+                        <p>4 days</p>
+                    </div>
+                    <div>
+                        <p>From</p>
+                        <p>$943</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Last_child">
+                <button></button>
+                <div>
+                    <img src="https://tinyurl.com/mw8k6hdh" alt="">
+                </div>
+                <span>New York, USA</span>
+                <span>Mauna Kea Summit Sunset and
+                    Stars Free Astro Photos Hilo Kona
+                    Waikoloa Pick Up</span>
+                <span>4.8 (243)</span>
+
+                <div class="flex">
+                    <div>
+                        <p>4 days</p>
+                    </div>
+                    <div>
+                        <p>From</p>
+                        <p>$771</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
