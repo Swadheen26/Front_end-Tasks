@@ -1,0 +1,32 @@
+1. Create a database called blogdatabase
+CREATE DATABASE blogdatabase;
+
+2. Create a table called user with the following columns: id (int), name (int), email (varchar), password (varchar)
+USE blogdatabase;
+
+CREATE TABLE user (
+    id INT,
+    name INT,
+    email VARCHAR(100),
+    password VARCHAR(100)
+);
+
+3. Update the data type of the name column from int to varchar(50)
+ALTER TABLE user MODIFY COLUMN name VARCHAR(50);
+
+4. Add a new column called isStudent (Boolean) to the user table
+ALTER TABLE user ADD COLUMN isStudent BOOLEAN;
+
+5. Insert 5 dummy data entries into the user table
+INSERT INTO user (id, name, email, password, isStudent) VALUES 
+(1, 'John Doe', 'john.doe@example.com', 'password123', TRUE),
+(2, 'Jane Smith', 'jane.smith@example.com', 'password456', FALSE),
+(3, 'Alice Johnson', 'alice.johnson@example.com', 'password789', TRUE),
+(4, 'Bob Brown', 'bob.brown@example.com', 'password012', FALSE),
+(5, 'Charlie Davis', 'charlie.davis@example.com', 'password345', TRUE);
+
+6. Delete all the data from the user table without deleting the table schema
+DELETE FROM user;
+
+7. Delete the user table schema
+DROP TABLE user;

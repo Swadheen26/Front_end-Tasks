@@ -1,0 +1,42 @@
+-- Create a database
+CREATE DATABASE UserAddressesDB;
+
+-- Use the created database
+USE UserAddressesDB;
+
+-- Create a table based on the provided UI form schema
+CREATE TABLE UserAddresses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    street_address VARCHAR(100) NOT NULL,
+    apt_suite VARCHAR(50),
+    phone_number VARCHAR(15) NOT NULL,
+    email_address VARCHAR(100) NOT NULL,
+    city VARCHAR(50) NOT NULL,
+    state VARCHAR(50) NOT NULL,
+    zip_code VARCHAR(10) NOT NULL
+);
+
+-- Insert dummy data into the table
+INSERT INTO UserAddresses (first_name, last_name, street_address, apt_suite, phone_number, email_address, city, state, zip_code)
+VALUES 
+('John', 'Doe', '123 Main St', 'Apt 4B', '123-456-7890', 'john.doe@example.com', 'Mount Rainier', 'Maryland', '20712'),
+('Jane', 'Smith', '456 Elm St', '', '987-654-3210', 'jane.smith@example.com', 'Mount Rainier', 'Maryland', '20712'),
+('Alice', 'Johnson', '789 Oak St', 'Suite 5C', '555-555-5555', 'alice.johnson@example.com', 'Mount Rainier', 'Maryland', '20712');
+
+-- Read all user addresses
+SELECT * FROM UserAddresses;
+
+-- Update a user address
+UPDATE UserAddresses
+SET street_address = '321 Pine St', apt_suite = 'Apt 1A'
+WHERE id = 1;
+
+-- Delete a user address
+DELETE FROM UserAddresses
+WHERE id = 2;
+
+-- Filter user addresses based on a condition (e.g., city is 'Mount Rainier')
+SELECT * FROM UserAddresses
+WHERE city = 'Mount Rainier';
