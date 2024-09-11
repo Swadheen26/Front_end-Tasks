@@ -32,7 +32,6 @@ def dictMerge(a, b):
   
   for i in a:
     result[i]= a[i]
-    
   for i in b:
     if i in result:
       result[i] += b[i]
